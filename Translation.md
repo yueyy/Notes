@@ -1,17 +1,4 @@
-Sample
-
-Bro offer a simple project named `sample` to show how to use each function of the Bro.For better presentation,sample is originazed by single project and multi Module (sample also can be splited to multi Repo),as whitch,app is the major project,others are individual service modules.
-
-```
-// package the sample project
-./gradlew assembleDebug
-
-// debug bro-complier , bro-gradle-plugin
-./gradlew assembleDebug -Dorg.gradle.debug=true --no-daemon
-
-```
-
-# Hot Deployment
+# Local Hot Deployment
 
 Local Hot Deployment is similar to a plug-in deployment.The modules are individually packaged to apk and loaded dynamically. In order to modularity more thorough,low cost of debugging,even can imcrease the packing rate by more than ten times.
 
@@ -123,3 +110,16 @@ bro {
 }
 ```
 As above,you can custom a function judging package Task Name to deal with these problems.
+
+# Sample
+
+Bro offer a simple project named `sample` to show how to use each function of the Bro.For better presentation,`sample` is originazed by single project and multi Module (sample also can be splited to multi Repo),as whitch,app is the major project,others are individual service modules.
+
+```
+// package the sample project
+./gradlew assembleDebug
+
+// debug bro-complier , bro-gradle-plugin
+./gradlew assembleDebug -Dorg.gradle.debug=true --no-daemon
+
+```
