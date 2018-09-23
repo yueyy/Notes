@@ -15,7 +15,7 @@ Bro offer a simple project named `sample` to show how to use each function of th
 
 Local Hot Deployment is similar to a plug-in deployment.The modules are individually packaged to apk and loaded dynamically. In order to modularity more thorough,low cost of debugging,even can imcrease the packing rate by more than ten times.
 
-Different from the common plug-in deployment is that Bro is conditioned on stabilization and compatibility.The package would be resource redundant,and 
+Different from the common plug-in deployment is that Bro is conditioned on stabilization and compatibility.The package would be resource redundant,and some other support for non-full plug-ins.
 
 ## Usage
 
@@ -49,7 +49,7 @@ bro{
 ```
 Among these:
 - `broPlugadget`,necessary  parameter,to definitely appoint this module as Plugadget mode，open the plug-in package mode of the module;
-- `broAppoutputs`,necessary parameter,to appoint the package of the host project.Different variant can have different.zip files depending on the host when packaged
+- `broAppoutputs`,necessary parameter,to appoint the package of the host project.Different variant can have different.zip files depending on the host when packaged;
 - After packaging,the result located on `module/build/bro/com.package.name.plugadget`,and it will automatically transmit module result to the phone by adb,shall be in effect after the app restart.
 
 
